@@ -1,0 +1,5 @@
+<!--pages/fuxing/fuxing.wxml-->
+<view class="vi">
+<image class="img" src="../images/I.jpg"></image>
+
+</view>

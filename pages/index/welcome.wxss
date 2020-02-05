@@ -1,0 +1,52 @@
+/*直接对组件应用样式，不用加点
+ pages/index/welcome.wxss
+display：flex 弹性盒子模型
+flex-direction:column  列排序方式
+align-items  居中
+border:外边框
+ */
+ page{
+background-color:aqua;
+width:100%；
+ }
+.contains{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+.img{
+  margin-top:160rpx; 
+  
+  width:200rpx;
+  height:200rpx
+}
+.font_1{
+  font-size:38rpx;
+  font-weight:bold;
+}
+.font_2{
+  font-size:30rpx;
+  
+  font-weight:bold;
+  color:blue;
+  margin-top:20rpx
+}
+/*
+1.添加边框 border 包裹字体与外边框高度即 line-height与height一样高也能实现 居中
+用flex实现
+*/
+.avatar{ 
+ border:1px solid black;
+height:80rpx;
+width:230rpx;
+border-radius: 5px;
+margin-top:200rpx;
+display:flex;
+flex-direction:column;
+text-align: center
+}
+.so{
+margin-top: 100rpx;
+
+}

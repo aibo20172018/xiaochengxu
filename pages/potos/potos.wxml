@@ -1,0 +1,38 @@
+<!--pages/potos/potos.wxml-->
+<view><swiper indicator-dots="true" autoplay="true" interval="5000">
+<swiper-item>
+<image src="iqiyi.png" ></image>
+</swiper-item>
+<swiper-item>
+<image src="vr.png" ></image>
+</swiper-item>
+<swiper-item>
+<image src="wx.png" ></image>
+</swiper-item>
+</swiper>
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="idx" >    
+<view class="post-container">
+  <view class="post-author-date">
+ {{idx}} <image class="post-img" src="{{item.mm_img}}"></image>
+  <text>{{item.title1}}</text>
+</view>
+<text calss="post_title">{{item.title2}}</text>
+<image class="pangxie" src="{{item.title3}}"></image>
+<text class="post-content">{{item.content}}</text>
+<view class="post-like">
+<image class="post-like-img" src="{{item.title4}}"></image>
+<text class="post-like-font">{{item.title6}}</text>
+<image class="post-like-img" src="{{item.title5}}"></image>
+<text class="post-like-font">{{item.title7}}</text>
+  </view>
+ </view>
+ </block>
+</view>
+
+
+
+
+
+
+
+

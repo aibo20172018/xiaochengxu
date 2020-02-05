@@ -1,0 +1,92 @@
+ /**
+   padding-bottom内边距
+   一层层view样式设置
+   display:column是垂直 
+   外层 flex 垂直居中 column
+   内层 view flex 平行 row +center  
+   
+ */
+ 
+ swiper{
+     width:100%;
+     height:600rpx;
+ }
+ swiper image{
+     width:100%;
+     height:600rpx;
+ }
+/**
+ 实现子元素垂直居中   padding-bottom内边距
+*/
+ .post-container{
+   display:flex;
+   flex-direction:column;
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    background-color:#fff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 10rpx;
+}
+/**
+ 实现行元素的居中
+*/
+.post-author-date{
+  margin:10rpx 0 20rpx 10rpx;
+  display:flex;
+  flex-direction: row;
+  align-items: center;  
+  }
+  /* margin-top:10rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10px; 上右下左*/
+.post_title{
+    
+ font-size:34rpx;
+ font-weight:600rpx;
+ margin-bottom:10rpx;
+ margin-left:20rpx;
+ color:aqua;
+}
+.post-img{
+/* vertical-align: middle; */
+width:100rpx; 
+height:100rpx;
+}
+.post-content{
+  font-size:28rpx;
+  color:black;
+  letter-spacing: 2rpx;
+  margin-left:20rpx;
+  margin-bottom:20rpx;
+}
+.pangxie{
+ width:100%;
+height:300rpx
+}
+.post-title-2{
+  font-size:26rpx;
+  margin-left:20rpx;
+}
+.post-like-img{
+height:32rpx;
+width:32rpx;
+margin-right:16rpx;
+}
+/*
+ 行内元素 和 块元素 的联系 行内没到宽度，可以一直放
+ display:flex;
+flex-direction:row;
+align-items:center;
+*/
+.post-like{
+display:flex;
+flex-direction:row;
+align-items:center;
+font-size:26rpx;
+margin-left:16rpx;
+
+}
+.post-like-font{
+  margin-right:40rpx;
+}

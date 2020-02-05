@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+ 
+  <view class="useri">
+  <text>姓名：{{name}}</text>
+  <text>工作：互联网 </text>
+  <image 
+   bindtap="callMe"  mode="aspectfit" class="imgClass" src="img/p.jpg"></image>
+  </view>
+  <view wx:if="{{P == 'ok'}}">OK </view>
+  <view wx:elif="{{p== 'no'}}">no</view>
+   <view wx:else>mima</view>
+   <view wx:blockfor></view>
+   <!-- <block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block wx:for="{{}}"></block> -->
+
+</view>

@@ -1,0 +1,13 @@
+<view  class="contains">
+<view>
+<image src="img/p.png" class="img"></image>
+</view>
+<text class="font_1">
+你好，欢迎来到五月小屋
+</text>
+<view class="avatar" bindtap="photos">
+<text class="font_2" >开启小程序之旅</text>
+</view>
+
+<text class="so" bind:tap="fuxing">只要愿意付出代价，想要的一定能回来</text>
+</view>
